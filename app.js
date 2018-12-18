@@ -4,7 +4,12 @@ const app = express();
 
 // Index Route
 app.get('/', (req, res) => {
-  res.send('<h1 style="margin:0 auto;width:50%;padding: 10px;">Moser lutscht Schwanz</h1>');
+  res.send('INDEX');
+});
+
+// About route
+app.get('/about', (req, res) => {
+  res.send('ABOUT');
 });
 
 const port = process.env.PORT || 8080;
